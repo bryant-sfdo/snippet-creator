@@ -2,17 +2,19 @@
   "name": "snippet-creator",
   "main": "./lib/snippet-creator",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "User Friendly way to create snippets in Atom!",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "snippet-creator:toggle"
   },
-  "repository": "https://github.com/atom/snippet-creator",
+  "repository": "https://github.com/ungb/snippet-creator",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "etch": "0.8.0",
+    "cson": "~3.0.2"
   }
 }
