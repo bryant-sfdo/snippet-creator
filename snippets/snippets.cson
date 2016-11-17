@@ -1,0 +1,4 @@
+'*':
+  'console.log':
+    'prefix': 'ttt'
+    'body': 'console.log(${1:"crash"});$2'

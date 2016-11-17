@@ -6,129 +6,59 @@
 
 .snippet-creator {
 
-  label {
-    border:solid 1px #d5d5d5;
-    padding: 0 0 0 5px;
-    font-size: 16px;
+  padding: @component-padding;
+  border-top: 1px solid @base-border-color;
+  flex: 0 0 auto;
 
-}
+  &-editor {
+    height: 45px;
+    border: 1px solid @input-border-color;
+    border-radius: @component-border-radius;
+    overflow: auto;
+    padding: @component-padding / 2;
+    background-color: @syntax-background-color;
 
-    padding: 10px 20px;
-    background: #f4f7f8;
-    margin: 10px auto;
-    padding: 20px;
-    background: #f4f7f8;
-    border-radius: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-
-  fieldset{
-      border: none;
+    atom-text-editor {
+      height: 100%;
+      font-size: @font-size;
+      .cursor-line {
+        background-color: transparent;
+      }
+    }
   }
-  legend {
-      font-size: 1.4em;
-      margin-bottom: 10px;
+  .textarea {
+    height: 200px;
   }
-  label {
-      display: block;
-      margin-bottom: 8px;
-  }
-  input[type="text"],
-  input[type="date"],
-  input[type="datetime"],
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="time"],
-  input[type="url"],
-  textarea,
-  select {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background: rgba(255,255,255,.1);
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    margin: 0;
-    outline: 0;
-    padding: 7px;
-    width: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    background-color: #e8eeef;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-    margin-bottom: 30px;
-
-  }
-    input[type="text"]:focus,
-    input[type="date"]:focus,
-    input[type="datetime"]:focus,
-    input[type="email"]:focus,
-    input[type="number"]:focus,
-    input[type="search"]:focus,
-    input[type="time"]:focus,
-    input[type="url"]:focus,
-    textarea:focus,
-    select:focus{
-      background: #d2d9dd;
+  &-bar {
+    display: flex;
+    align-items: center;
+    margin-top: @component-padding;
   }
 
-::-webkit-input-placeholder {
-  color:#8a97a0;
-
-}
-
-  .body-text{
-    height: 800px;
-    resize: none;
-overflow-y: scroll;
+  &-label {
+    font-family: @font-family;
+    font-size: @font-size;
+    margin-right: @component-padding;
   }
 
-    select{
-      -webkit-appearance: menulist-button;
-      height:35px;
-  }
-    .number {
-      background: #1abc9c;
-      color: #fff;
-      height: 30px;
-      width: 30px;
-      display: inline-block;
-      font-size: 0.8em;
-      margin-right: 4px;
-      line-height: 0px;
-      text-align: center;
-      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-      border-radius: 15px 15px 15px 0px;
-  }
-  .btn {
-    line-height: 0px;
-    border-radius: 5px;
-    padding: 15px 25px;
-    font-size: 22px;
-    text-decoration: none;
-    margin: 20px;
-    position: relative;
-    display: inline-block;
+  &-button {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &.is-secondary {
+      flex: 0 1 auto;
+      margin-right: @component-padding;
+    }
   }
 
+  &-remaining-characters {
+    width: 1.25em;
+    text-align: right;
+    margin-left: @component-padding;
+    color: @text-color-subtle;
 
-  .blue {
-    background: #55acee;
+    &.is-warning { color: @text-color-warning; }
+    &.is-error   { color: @text-color-error; }
   }
-
-  .blue:hover {
-    background: #6FC6FF;
-  }
-
-  .green {
-    background: #2ecc71;
-  }
-
-  .green:hover {
-    background: #48E68B;
-  }
-
-
 
 }
