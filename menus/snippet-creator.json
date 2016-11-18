@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Create Snippet",
-        "command": "snippet-creator:toggle"
+        "command": "snippet-creator:create"
       }
     ]
   },
@@ -16,7 +16,7 @@
           "submenu": [
             {
               "label": "Create Snippet",
-              "command": "snippet-creator:toggle"
+              "command": "snippet-creator:create"
             }
           ]
         }

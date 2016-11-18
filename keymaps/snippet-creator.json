@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-shift-q": "snippet-creator:toggle"
+    "alt-shift-s": "snippet-creator:create"
   }
 }
