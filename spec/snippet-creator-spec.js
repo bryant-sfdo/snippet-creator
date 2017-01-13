@@ -23,7 +23,7 @@ describe('SnippetCreator', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'snippet-creator:toggle');
+      atom.commands.dispatch(workspaceElement, 'snippet-creator:create');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -55,7 +55,7 @@ describe('SnippetCreator', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'snippet-creator:toggle');
+      atom.commands.dispatch(workspaceElement, 'snippet-creator:created');
 
       waitsForPromise(() => {
         return activationPromise;
