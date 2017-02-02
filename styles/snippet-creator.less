@@ -10,10 +10,11 @@
   flex: 0 0 auto;
 
   &-editor {
-    height: 45px;
-    border: 1px solid @input-border-color;
+    margin: 2px;
+    height: inherit;;
+    // border: 1px solid @input-border-color;
     border-radius: @component-border-radius;
-    padding: @component-padding / 2;
+    // padding: @component-padding / 2;
     background-color: @syntax-background-color;
 
     atom-text-editor {
@@ -60,5 +61,7 @@
     &.is-warning { color: @text-color-warning; }
     &.is-error   { color: @text-color-error; }
   }
-
+  a.btn {
+    margin: 5px;
+  }
 }
