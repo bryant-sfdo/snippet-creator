@@ -14,9 +14,7 @@
   },
   "dependencies": {
     "etch": "0.8.0",
-    "cson": "~3.0.2"
-  },
-  "devDependencies": {
+    "cson": "~3.0.2",
     "escape-json-node": "1.0.8"
   }
 }
