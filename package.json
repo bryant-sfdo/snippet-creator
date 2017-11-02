@@ -1,10 +1,9 @@
 {
   "name": "snippet-creator",
   "main": "./lib/snippet-creator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "User Friendly way to create snippets in Atom!",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "snippet-creator:create"
   },
@@ -18,6 +17,6 @@
     "cson": "~3.0.2"
   },
   "devDependencies": {
-    "escape-json-node" : "1.0.8"
+    "escape-json-node": "1.0.8"
   }
 }
